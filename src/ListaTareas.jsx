@@ -3,12 +3,19 @@ import './ListaTareas.css';
 import Formulario from "./Formulario";
 import Tarea from "./Tarea";
 
-function ListaTareas () {
+function ListaTareas ({listaTareas,setTareas,verForm}) {
 
     return (
         <>
-          <Formulario/>
-          <Tarea/>
+          {verForm && <Formulario />}
+          {listaTareas.map((tarea)=>{
+            return (
+              <Tarea titulo={tarea.titulo} estado={tarea.estado}/>
+            )
+          })
+
+          }
+          
         </>
     )
 }

@@ -1,3 +1,9 @@
+.content-form{
+  display: flex;
+  justify-content: center;
+  
+}
+
 .formulario {
     display: flex;
     align-items: center;
@@ -6,6 +12,8 @@
     border-radius: 0 0 6px 6px;
     box-shadow: 0 0 4px rgba(30, 58, 138, 0.3); 
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    background-color: white;
+    width: 80%;
   }
   
   .formulario input {
@@ -39,7 +47,7 @@
   }
 
   .formulario button:hover {
-    background-color: #b6b3b3;
+    background-color: #dadada;
     font-weight: bold;
     color: #1E3A8A;
     transform: translateY(-2px);

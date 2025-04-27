@@ -4,12 +4,17 @@ import Header from './Header'
 import ListaTareas from './ListaTareas'
 
 function App() {
-  const [listaTareas, setTareas] = useState([])
+  const [verForm, setVerForm] = useState(false)
+  const [listaTareas, setTareas] = useState([
+    {titulo:"Hacer la tarea", estado:"Pendiente"},
+    {titulo:"Comer", estado:"Pendiente"},
+    {titulo:"Dormir", estado:"Pendiente"}
+  ])
 
   return (
     <>
-      <Header/>
-      <ListaTareas/>
+      <Header verForm={verForm} setVerForm={setVerForm}/>
+      <ListaTareas listaTareas={listaTareas} setTareas={setTareas} verForm={verForm}/>
     </>
   )
 }
