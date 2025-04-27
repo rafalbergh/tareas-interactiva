@@ -4,7 +4,7 @@ import Header from './Header'
 import ListaTareas from './ListaTareas'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [listaTareas, setTareas] = useState([])
 
   return (
     <>
