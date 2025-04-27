@@ -8,7 +8,7 @@ function Header () {
         <>
         <div className="header">
             <h1>Mis tareas</h1>
-            <button>Agregar tarea</button>
+            <button className="boton-agregar">Agregar tarea</button>
         </div>
         </>
     )
