@@ -6,9 +6,6 @@ import ListaTareas from './ListaTareas'
 function App() {
   const [verForm, setVerForm] = useState(false)
   const [listaTareas, setTareas] = useState([
-    {titulo:"Hacer la tarea", estado:"Pendiente"},
-    {titulo:"Comer", estado:"Pendiente"},
-    {titulo:"Dormir", estado:"Pendiente"}
   ])
 
   return (

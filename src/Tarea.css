@@ -1,44 +1,87 @@
 .tarea {
-    display: flex;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     box-shadow: 0 0 4px rgba(30, 58, 138, 0.3);
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
-
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px;
+    width: 30%;       
+    height: 170px;
+    background-color:white;
 }
 
-.fila {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+ h2{
+    font-size: 18px;
+    color:#1E3A8A;
+ }
+
+ .pendiente{
+    font-size: 16px;
+    color: #e22b2b;
+ }
+
+ .completado{
+    font-size: 16px;
+    color: #219304;
+ }
+
+.estado{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    width: 100%;
+    text-align: left;
     margin-bottom: 20px;
+    min-height: 50px;
 }
-
+.boton{
+    width: 100%;
+    text-align: right;
+    
+}
 .bt-completar {
-    align-self: flex-end;
     background-color: #219304;
-    width: 120px;
     color: white;
-    padding: 8px 16px;
+    padding: 8px 10px;
+    margin-left: 10px;
     border: none;
     border-radius: 6px;
-    font-weight: 500;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.1s ease;
-  }
+}
 
-  .bt-completar:hover {
+.bt-eliminar {
+    background-color: #a31414;
+    color: white;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease;
+}
+
+.bt-completar:hover {
     background-color: #dadada;
     font-weight: bold;
     color: #219304;
     transform: translateY(-2px);
+}
+
+.bt-eliminar:hover {
+    background-color: #dadada;
+    font-weight: bold;
+    color: #e22b2b;
+    transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 1142px) {
+    .tarea {
+        width: 90%;   
+    }
   }

@@ -1,18 +1,25 @@
 import React from "react";
-import './Tarea.css'
+import './Tarea.css';
+import { FaCheck, FaTrash,FaClock } from 'react-icons/fa';
 
-function Tarea ({titulo, estado}) {
+function Tarea({ titulo, estado }) {
 
     return (
 
         <div className="tarea">
-            <div className="fila">
-               <div className="titulo"><h1>{titulo}</h1></div>
-               <div className="estado"><h3>{estado}</h3></div>
+            <div className="estado">
+                <h3 className={estado === "Pendiente" ? "pendiente" : "completado"}> {estado === "Pendiente" ? <FaClock/> : <FaCheck/>} {estado}</h3>
             </div>
-             <button className="bt-completar">Completar</button>
-           
-            
+
+            <div className="titulo">
+                <h2>{titulo}</h2>
+            </div>
+
+            <div className="boton">
+                <button className="bt-eliminar"><FaTrash/></button>
+                <button className="bt-completar"><FaCheck/></button>
+            </div>
+
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import './Header.css'
+import './Header.css';
+
 
 function Header ({verForm,setVerForm}) {
     const muestraForm = () => {
@@ -10,7 +11,7 @@ function Header ({verForm,setVerForm}) {
         <>
         <div className="header">
             <h1>Mis tareas</h1>
-            <button className="boton-agregar" onClick={muestraForm}>{verForm ? 'X' : 'Agregar tarea'}</button>
+            <button className={verForm ? 'boton-cerrar' : 'boton-agregar'}  onClick={muestraForm}>{verForm ? 'Cerrar' : 'Agregar'}</button>
         </div>
         </>
     )
