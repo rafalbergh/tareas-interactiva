@@ -16,6 +16,10 @@ h1 {
     letter-spacing: -0.5px;
 }
 
+.header p {
+    color: rgb(198, 197, 197);
+}
+
 .boton-agregar {
     background-color: white;
     color: #1E3A8A;

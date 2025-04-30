@@ -4,6 +4,7 @@ import './Formulario.css';
 function Formulario({ listaTareas, setTareas }) {
     const [titulo, setTitulo] = useState("");
     const [estado, setEstado] = useState("Pendiente");
+    const [id, setId] = useState(Date.now());
     const [error, setError] = useState("");
 
     const obtieneDescripTarea = (event) => {
@@ -21,7 +22,9 @@ function Formulario({ listaTareas, setTareas }) {
             return;
         }
 
-        let tareaNueva = { titulo, estado };
+        setId(Date.now());
+
+        let tareaNueva = { id, titulo, estado };
 
         setTareas([...listaTareas, tareaNueva]);
 

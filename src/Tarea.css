@@ -5,43 +5,46 @@
     box-shadow: 0 0 4px rgba(30, 58, 138, 0.3);
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
     margin: 20px;
-    width: 45%;       
-    height: 170px;
-    background-color:white;
+    width: 45%;
+    min-height: 140px;
+    background-color: white;
 }
 
- h2{
-    font-size: 17px;
-    color:#6d6e71;
- }
+p {
+    font-size: 16px;
+    color: #78797a;
+}
 
- .pendiente{
+.pendiente {
     font-size: 14px;
     color: #e22b2b;
- }
+}
 
- .completado{
+.completado {
     font-size: 14px;
     color: #219304;
- }
+}
 
-.estado{
+.estado {
     width: 100%;
     text-align: right;
     margin-bottom: 10px;
 }
 
-.titulo{
+.titulo {
     width: 100%;
     text-align: left;
     margin-bottom: 20px;
-    min-height: 50px;
+    min-height: 20px;
+
 }
-.boton{
+
+.boton {
     width: 100%;
     text-align: right;
-    
+
 }
+
 .bt-completar {
     background-color: #219304;
     color: white;
@@ -82,6 +85,6 @@
 
 @media only screen and (max-width: 1142px) {
     .tarea {
-        width: 90%;   
+        width: 90%;
     }
-  }
+}
