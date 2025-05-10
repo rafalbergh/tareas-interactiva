@@ -1,0 +1,28 @@
+
+.menu {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 0;                  
+  }
+  
+  .link {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none; 
+    text-decoration: none; 
+    color: black; 
+    position: relative; 
+    border-bottom: 4px solid #dbdcdc ;
+  }
+  
+  .link:hover {
+    border-bottom: 5px solid #FACC15 ;
+  }
+
+  .active {
+    border-bottom: 5px solid #FACC15 ;
+  }

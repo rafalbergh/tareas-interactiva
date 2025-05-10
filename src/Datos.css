@@ -1,0 +1,20 @@
+.contenedor-datos {
+    padding: 20px;
+    width: 100%;
+    margin-top: 2%;
+    background-color: #fafafa;
+}
+
+
+
+.lista-datos {
+    list-style-type: none;
+    padding-left: 20px; 
+    margin: 0;
+}
+
+.lista-datos li {
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    font-size: 16px;
+    color: #333;
+}

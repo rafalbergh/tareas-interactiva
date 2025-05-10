@@ -2,17 +2,25 @@ import React from "react";
 import './Header.css';
 
 
-function Header({ verForm, setVerForm, pendientes,completadas}) {
+function Header({ muestraBoton, titulo, verForm, setVerForm, resumen}) {
     const muestraForm = () => {
         setVerForm(!verForm);
     };
+    
 
     return (
         <>
             <div className="header">
-                <h1>Mis tareas</h1>
-                <p>Pendientes ({pendientes}) / Completadas ({completadas})</p>
-                <button className={verForm ? 'boton-cerrar' : 'boton-agregar'} onClick={muestraForm}>{verForm ? 'Cerrar' : 'Agregar'}</button>
+                <h1>{titulo}</h1>
+                {
+                    muestraBoton ?
+                        <>
+                            <p>{resumen}</p>
+                            <button className={verForm ? 'boton-cerrar' : 'boton-agregar'} onClick={muestraForm}>{verForm ? 'Cerrar' : 'Agregar'}</button>
+                        </>
+                        :
+                        null
+                }
             </div>
         </>
     )

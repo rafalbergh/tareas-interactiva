@@ -1,16 +1,23 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
 import './App.css';
 
 import MisTareas from './MisTareas';
+import Info from './Info';
+import Menu from './Menu';
+import { BrowserRouter, Routes, Route } from 'react-router';
 
 function App() {
 
 
-
   return (
     <>
-      <MisTareas />
+      <BrowserRouter>
+        <Menu />
+        <Routes>
+          <Route path='/MisTareas' element={<MisTareas />} />
+          <Route path='/' element={<MisTareas />} />
+          <Route path='/Info' element={<Info />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
