@@ -13,7 +13,7 @@ function Info() {
 
     return (
         <>
-            <Header muestraBoton={false} titulo="Mis Datos" verForm={false} setVerForm={""} resumen={""} />
+            <Header muestraBoton={false} titulo="Mis Información" verForm={false} setVerForm={""} resumen={""} />
             <Datos 
               nombre={nombre} 
               apellido={apellido} 
