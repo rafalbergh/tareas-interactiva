@@ -4,9 +4,9 @@ import Datos from "./Datos";
 
 function Info() {
 
-    const nombre = "Rafael";
-    const apellido = "PérGarcía Hernándezez";
-    const direccion = "COsta Rica, San José, Goicoechea, Guadalupe";
+    const nombre = "Rafael Alberto";
+    const apellido = "García Hernández";
+    const direccion = "Costa Rica, San José, Goicoechea, Guadalupe";
     const telefono = "555-1234";
     const fechaNacimiento = "03/10/1988";
     const edad = 34;
